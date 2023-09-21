@@ -1,0 +1,359 @@
+@font-face {
+  font-family: alegreya;
+  src: url(../font/AlegreyaSansSC-Regular.ttf);
+}
+main {
+  background-color: #38302a;
+  overflow: hidden;
+}
+main > * {
+  font-family: alegreya;
+}
+main > .page-1 ul {
+  height: 50px;
+}
+main > .page-1 ul > li {
+  font-size: 16px !important;
+}
+main > .page-1 ul > li > a {
+  transition: 0.4s;
+}
+main > .page-1 ul > li > a:hover {
+  color: #ffe592 !important;
+}
+main > .page-1 ul > li > i {
+  color: #ffe592 !important;
+  transform: translateY(40px) rotate(50deg) scale(0.2);
+  transition: 0.7s;
+  margin-left: -20px;
+}
+main > .page-1 ul > li:hover > i {
+  transform: translateY(0) rotate(0) scale(1);
+}
+main > .page-1 .wrap {
+  transition: 0.4s;
+  overflow: hidden;
+  cursor: pointer;
+}
+main > .page-1 .wrap > i {
+  color: #ffe592 !important;
+  transform: translate(25px, 45px) rotate(50deg) scale(0.2);
+  transition: 0.7s;
+  margin-left: -20px;
+}
+main > .page-1 .wrap:hover > i {
+  transform: translate(25px, 0) rotate(0) scale(1);
+}
+main > .page-1 .wrap:hover {
+  color: #ffe592 !important;
+}
+main > .page-1 .content > h1 {
+  top: 20%;
+}
+@media screen and (min-width: 992px) {
+  main > .page-1 .content > h1 {
+    font-size: 85px !important;
+  }
+}
+main > .page-1 .content > h1 > span:first-of-type {
+  color: rgba(255, 230, 146, 0.8549019608);
+}
+main > .page-1 .content > h1 > span:nth-of-type(2) {
+  color: rgba(255, 230, 146, 0.6901960784);
+}
+main > .page-1 .content > h1 > span:last-of-type {
+  color: rgba(255, 230, 146, 0.4549019608);
+}
+main > .page-1 .content > .obj1 {
+  top: 6%;
+  left: 2%;
+}
+main > .page-1 .content > .obj2 {
+  top: 45%;
+  left: 10%;
+}
+main > .page-1 .content > .obj3 {
+  top: 5%;
+  right: 5%;
+}
+@media screen and (max-width: 992px) {
+  main > .page-1 .content > .obj3 {
+    top: 43%;
+    left: 20%;
+  }
+}
+main > .page-1 .content > .obj4 {
+  top: 30%;
+  right: 0;
+}
+main > .page-1 .content > div.obj {
+  top: 7%;
+  right: -7%;
+}
+@media screen and (max-width: 992px) {
+  main > .page-1 .content > div.obj {
+    top: 45%;
+    left: 42%;
+  }
+}
+main > .page-1 .content > div.obj > span:last-of-type {
+  color: #ffe592;
+}
+main > .page-1 .content > .button {
+  top: 65%;
+  left: 0%;
+}
+@media screen and (max-width: 1200px) and (min-width: 991px) {
+  main > .page-1 .content > .button {
+    top: 75%;
+  }
+}
+main > .page-1 .content > .button > div {
+  border: 1px solid #ffe592;
+  font-size: 22px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main > .page-1 .content > .button > div:hover {
+  transform: scale(1.1);
+}
+main > .page-1 .content > .button > div:first-of-type {
+  background-color: #ffe592;
+}
+main > .page-2 > .intro {
+  background-image: url(../img/bg.webp);
+}
+main > .page-2 > .intro > div > figure:nth-of-type(1) {
+  transform: translateX(30px);
+  z-index: 10;
+}
+main > .page-2 > .intro > div > figure:nth-of-type(2) {
+  transform: translateX(-30px);
+}
+main > .page-2 > .intro > figure > i {
+  font-size: 35px;
+  top: 5%;
+  right: 10%;
+  transition: 0.4s;
+}
+main > .page-2 > .intro > figure:hover > i {
+  color: #ffe592;
+}
+main > .page-2 > .intro > figure > img {
+  transition: 0.4s;
+}
+main > .page-2 > .intro > figure:hover > img {
+  transform: scale(1.1);
+}
+main > .page-2 > .intro > .line {
+  border: 1px solid rgba(0, 0, 0, 0.8431372549);
+  position: relative;
+}
+main > .page-2 > .intro > .line::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.662745098);
+  top: 4px;
+  left: 0;
+}
+main > .page-2 > .intro > .award > figure > img {
+  filter: brightness(0);
+  transition: 0.4s;
+}
+main > .page-2 > .intro > .award > figure:hover > img {
+  filter: brightness(1);
+}
+main > .page-3 .slide1 {
+  top: 45%;
+}
+main > .page-3 .slide2 {
+  top: 20%;
+}
+main > .page-3 .slide3 {
+  top: 4%;
+}
+main > .page-3 .slide {
+  transition: all 1s;
+  display: flex;
+}
+main > .page-3 .slide:hover {
+  transform: scale(1.1);
+}
+main > .page-3 .cont > h2 {
+  justify-self: start;
+}
+main > .page-3 .cont > h2 > span:first-of-type {
+  color: rgba(255, 230, 146, 0.8549019608);
+}
+main > .page-3 .cont > h2 > span:nth-of-type(2) {
+  color: rgba(255, 230, 146, 0.6901960784);
+}
+main > .page-3 .cont > h2 > span:last-of-type {
+  color: rgba(255, 230, 146, 0.4549019608);
+}
+@media screen and (min-width: 991px) {
+  main > .page-3 .cont > h2 {
+    top: -5%;
+    left: 0%;
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 992px) {
+  main > .page-3 .cont > h2 {
+    top: -8%;
+    left: 0%;
+    font-size: 30px;
+  }
+}
+main > .page-3 i {
+  font-size: 30px;
+  position: relative;
+  top: -5%;
+  padding: 5% 0;
+  transition: 0.4s;
+  border-radius: 50%;
+  outline: 0px solid #ffe592;
+  outline-offset: -10px;
+  cursor: pointer;
+  color: #ffe592;
+}
+main > .page-3 i:hover {
+  color: #ffe592;
+  outline: 1px solid #ffe592;
+  outline-offset: 10px;
+}
+main > .page-4 figure > figcaption > span:last-of-type,
+main > .page-7 figure > figcaption > span:last-of-type {
+  color: #ffe592;
+}
+main > .page-4 p,
+main > .page-7 p {
+  font-size: 35px;
+  text-justify: newspaper;
+  color: rgba(255, 230, 146, 0.5647058824);
+}
+@media screen and (max-width: 992px) {
+  main > .page-4 p,
+  main > .page-7 p {
+    font-size: 25px;
+  }
+}
+main > .page-4 i,
+main > .page-7 i {
+  color: #ffe592;
+}
+main > .page-4 .ceo {
+  height: 100vh;
+}
+main > .page-5 figure {
+  animation: updown 2s linear infinite alternate;
+}
+main > .page-5 .menu {
+  transform: translateY(-50px);
+}
+main > .page-5 .menu > figcaption {
+  font-size: 20px;
+  color: #ffe592;
+}
+main > .page-5 .menu > p:first-of-type {
+  color: rgba(255, 230, 146, 0.6901960784);
+}
+main > .page-5 .menu > p:last-of-type {
+  color: rgba(255, 230, 146, 0.4549019608);
+  margin-top: 20px;
+  text-align: justify;
+}
+main > .page-6 > div {
+  background-image: url(../img/bg.webp);
+}
+main > .page-6 > div > .center h2 {
+  font-size: 60px;
+}
+main > .page-6 > div > .center p {
+  font-size: 22px;
+  padding-top: 50px;
+}
+main > .page-6 > div > .youtube > div {
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 1px solid #ffe592;
+  border-top: 0;
+}
+main > .page-6 > div > .youtube > div > figure > img {
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 50%;
+}
+main > .page-6 > div > .youtube > div > figure:hover > img {
+  transform: scale(1.1);
+}
+main > .page-6 > div > .youtube > div > figure > i {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffe592;
+  cursor: pointer;
+}
+main > .page-6 > div > .slice > figure:last-of-type {
+  top: 25%;
+  left: -10%;
+}
+main > .page-6 > div > .slice > figure:first-of-type {
+  top: 50%;
+  left: 10%;
+}
+main > .page-7 > div > div:first-of-type {
+  height: 130px;
+  overflow: hidden;
+}
+main > .page-7 .fig {
+  transition: 0.7s;
+}
+main > .page-7 .quote {
+  height: 300px;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  main > .page-7 .quote {
+    height: 320px;
+  }
+}
+main > .page-7 .quote > .txt {
+  transition: 0.7s;
+}
+main > .page-7 .quote > .txt > p {
+  font-size: 30px;
+  margin-top: 30px;
+}
+@media screen and (max-width: 992px) {
+  main > .page-7 .quote > .txt > p {
+    font-size: 24px;
+  }
+}
+main > .page-8 > div > div > h2 {
+  font-size: 50px;
+  border: 2px solid #ffe592;
+}
+main > .page-8 i {
+  transition: 0.4s;
+}
+main > .page-8 i:hover {
+  color: #ffe592;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}/*# sourceMappingURL=master.css.map */
