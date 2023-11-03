@@ -28,38 +28,41 @@ let src3 = slide[2].getAttribute('src')
 const srcs = [src1, src2, src3]
 
 
-shift()
+// shift()
 
-document.getElementById('right').addEventListener('click', () => {
+// document.getElementById('right').addEventListener('click', () => {
 
-    transform()
-    shift()
+//     transform()
+//     shift()
 
-    setTimeout(() => {
-        slide[0].removeAttribute('src')
-        slide[0].style.transform = 'translate(-120%,0)'
-        slide[0].setAttribute('src', srcs[2])
-        slide[0].style.transform = 'translate(0,0)'
-        slide[1].removeAttribute('src')
-        slide[1].setAttribute('src', srcs[1])
-        slide[1].style.transform = 'scale(1)'
-        slide[2].removeAttribute('src')
-        slide[2].style.transform = 'translate(0,-120%)'
-        slide[2].setAttribute('src', srcs[0])
-        slide[2].style.transform = 'translateY(0)'
-    }, 700);
+//     setTimeout(() => {
+//         slide[0].removeAttribute('src')
+//         slide[0].style.transform = 'translate(-120%,0)'
+//         slide[0].setAttribute('src', srcs[2])
+//         slide[0].style.transform = 'translate(0,0)'
+//         slide[1].removeAttribute('src')
+//         slide[1].setAttribute('src', srcs[1])
+//         slide[1].style.transform = 'scale(1)'
+//         slide[2].removeAttribute('src')
+//         slide[2].style.transform = 'translate(0,-120%)'
+//         slide[2].setAttribute('src', srcs[0])
+//         slide[2].style.transform = 'translateY(0)'
+//     }, 700);
 
-    flag++
+  
     
-})
+// })
 
-
+shift()
+shift()
 
 document.getElementById('left').addEventListener('click',()=>{
 
-    
-    transform()
     shift()
+    transform()
+    // shift()
+    // shift()
+
     setTimeout(() => {
         slide[0].removeAttribute('src')
         slide[0].style.transform = 'translate(+120%,0)'
@@ -119,21 +122,22 @@ const set = setInterval(() => {
 
 // *****************************
 
-let txt = -330
-let mt = -140
+let mt_txt = -250
+let mt_fig = -150
 let flag = 0
+const quote = document.getElementsByClassName('demo')[0]
+const _p = document.getElementsByClassName('text')[0]
+
+
 document.getElementById('arrR').addEventListener('click',()=>{
-    flag++
-    if(flag>2){
-        mt=0
-        txt = 0
-        document.getElementsByClassName('fig')[0].style.marginTop=mt+'px'
-        document.getElementsByClassName('txt')[0].style.marginTop=txt + 'px'
+    if( flag < 2){
+        quote.style.marginTop = (mt_fig*(flag + 1)) + 'px'
+        _p.style.marginTop = (mt_txt*(flag + 1)) + 'px'
+        flag++
     }else{
-        document.getElementsByClassName('fig')[0].style.marginTop=mt+'px'
-        mt = mt*2 
-        document.getElementsByClassName('txt')[0].style.marginTop=txt + 'px'
-        txt = txt*2 -30
+        flag = 0
+        quote.style.marginTop = 0
+        _p.style.marginTop = 0
     }
     
     
