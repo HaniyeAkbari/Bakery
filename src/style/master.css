@@ -186,6 +186,12 @@ main > .page-3 .slide:hover {
 }
 main > .page-3 .cont > h2 {
   justify-self: start;
+  font-size: 35px;
+}
+@media screen and (max-width: 768px) {
+  main > .page-3 .cont > h2 {
+    font-size: 25px;
+  }
 }
 main > .page-3 .cont > h2 > span:first-of-type {
   color: rgba(255, 230, 146, 0.8549019608);
@@ -196,18 +202,18 @@ main > .page-3 .cont > h2 > span:nth-of-type(2) {
 main > .page-3 .cont > h2 > span:last-of-type {
   color: rgba(255, 230, 146, 0.4549019608);
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 768px) {
   main > .page-3 .cont > h2 {
     top: -5%;
     left: 0%;
-    font-size: 55px;
+    font-size: 45px;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   main > .page-3 .cont > h2 {
     top: -8%;
     left: 0%;
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 main > .page-3 i {
@@ -309,30 +315,41 @@ main > .page-6 > div > .slice > figure:first-of-type {
 }
 main > .page-7 > div > div:first-of-type {
   height: 130px;
-  overflow: hidden;
 }
 main > .page-7 .fig {
-  transition: 0.7s;
-}
-main > .page-7 .quote {
-  height: 300px;
+  height: 150px;
   overflow: hidden;
 }
-@media screen and (max-width: 992px) {
-  main > .page-7 .quote {
-    height: 320px;
-  }
+main > .page-7 .fig > figure {
+  height: 150px;
+  transition: 0.7s;
+  margin: 0;
 }
-main > .page-7 .quote > .txt {
+main > .page-7 .fig > figure > img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main > .page-7 .quote {
+  height: 250px;
+  overflow: hidden;
+}
+main > .page-7 .quote > div > p {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  height: 250px;
   transition: 0.7s;
 }
-main > .page-7 .quote > .txt > p {
-  font-size: 30px;
-  margin-top: 30px;
+@media screen and (max-width: 768px) {
+  main > .page-7 .quote > div > p {
+    font-size: 22px;
+  }
 }
-@media screen and (max-width: 992px) {
-  main > .page-7 .quote > .txt > p {
-    font-size: 24px;
+@media screen and (max-width: 576px) {
+  main > .page-7 .quote > div > p {
+    font-size: 19px;
   }
 }
 main > .page-8 > div > div > h2 {
